@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* index html */
+.parent {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-rows: 200px;
+}
+
+.box {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  /* height: 200px; */
+  background-color: gray;
+  border: 1px solid red;
+}
+.item-1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.item-2 {
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+.item-3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.item-4 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.item-5 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.item-6 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+/* area html */
+.area {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-rows: 200px;
+  grid-template-areas:
+    "header header header"
+    "sidebar section section"
+    "sidebar section section"
+    "footer footer footer";
+}
+
+.area-item-1 {
+  grid-area: header;
+}
+.area-item-2 {
+  grid-area: header;
+}
+.area-item-3 {
+  grid-area: header;
+}
+
+.area-item-4 {
+  grid-area: sidebar;
+}
+.area-item-5 {
+  grid-area: section;
+}
+.area-item-6 {
+  grid-area: section;
+}
+
+.area-item-7 {
+  grid-area: sidebar;
+}
+.area-item-8 {
+  grid-area: section;
+}
+.area-item-9 {
+  grid-area: section;
+}
+.area-item-10 {
+  grid-area: footer;
+}
+.area-item-11 {
+  grid-area: footer;
+}
+.area-item-12 {
+  grid-area: footer;
+}
